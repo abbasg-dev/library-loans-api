@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "863726a0-a003-42b1-89c8-6274bc049f9c",
+    "name": "LibraryLoansApi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5542059",
+    "_collection_link": "https://go.postman.co/collection/5542059-863726a0-a003-42b1-89c8-6274bc049f9c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://library-loans-api.onrender.com/health",
+          "protocol": "https",
+          "host": [
+            "library-loans-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Member Loans",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://library-loans-api.onrender.com/api/v1/members/6aad6a4a630533d49b7c0568/loans",
+          "protocol": "https",
+          "host": [
+            "library-loans-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "members",
+            "6aad6a4a630533d49b7c0568",
+            "loans"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Loan",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"copy\": \"6aad6a4c630533d49b7c3c19\",\r\n  \"member\": \"6aad6a4a630533d49b7c0568\",\r\n  \"borrowedAt\": \"2026-09-18T17:00:00.000Z\",\r\n  \"dueDate\": \"2026-10-02T17:00:00.000Z\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://library-loans-api.onrender.com/api/v1/loans",
+          "protocol": "https",
+          "host": [
+            "library-loans-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "loans"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
