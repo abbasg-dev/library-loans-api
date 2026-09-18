@@ -1,0 +1,24 @@
+{
+  "name": "library-loans-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [],
+  "author": "Abbas Ghaith",
+  "license": "ISC",
+  "description": "Library loans API with MongoDB",
+  "dependencies": {
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.24.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
